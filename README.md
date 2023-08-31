@@ -39,9 +39,9 @@ shopItem:
 
 命令&权限:
 > /apl help 查看帮助 apl.use.help
-> /apl check [订单] 查看订单状态 apl.admin.check
-> /apl update [订单] 手动发货订单 apl.admin.update
-> /apl reload 重载配置文件
+/apl check [订单] 查看订单状态 apl.admin.check
+/apl update [订单] 手动发货订单 apl.admin.update
+/apl reload 重载配置文件
 
 其他:
 自己包装的爱发电javasdk: https://github.com/meteorOSS/AifadianApi/tree/master
