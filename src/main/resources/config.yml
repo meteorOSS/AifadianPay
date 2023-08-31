@@ -1,0 +1,28 @@
+setting:
+  # userId与token在爱发电获取,详情可参考mcbbs帖内教程
+  userId: 'user_id'
+  token: 'token'
+  # 自动发货间隔
+  delay: 3
+
+shopItem:
+  # 商品名称为爱发电内型号名称，请参考使用教程
+  '100点券':
+    # 展示名
+    displayName: '100点券'
+    # 使用 /apl show 100点券 时展示的url
+    showUrl: 'https://afdian.net/item/1cab866647aa11ee9f3652540025c377'
+    # 仅显示在展示信息 ( {price}RMB )
+    price: 100
+    # 获取点券
+    point: 100
+    # 执行指令
+    commands:
+      - 'give @p@ stone 1'
+      - 'say @p@,感谢你的支持'
+      - 'say 白给了啊，@p@刚刚赞助了100点券'
+      - '[title]&a已发货/&f+@point@&a 点卷 (&c@price@rmb@&a)'
+      - '[message]&a '
+      - '[message]&f 已完成订单 &e@tradeNo@ &f感谢您的支持'
+      - '[message]&f 当前点券余额 &e&n@current_point@'
+      - '[message]&a '
